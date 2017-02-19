@@ -9,6 +9,7 @@ export default class AppComponent {
     author: string = 'Artem';
     temp: string = 'test string';
     twoSideStr: string;
+    age: number = 20;
 
     showTempString(): void {
         alert(this.temp);

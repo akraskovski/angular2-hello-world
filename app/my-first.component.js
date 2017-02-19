@@ -12,16 +12,34 @@ var core_1 = require("@angular/core");
 var MyFirstComponent = (function () {
     function MyFirstComponent() {
     }
+    Object.defineProperty(MyFirstComponent.prototype, "userAge", {
+        get: function () {
+            return this._userAge;
+        },
+        set: function (age) {
+            if (age < 0 || age > 100)
+                this._userAge = 18;
+            else
+                this._userAge = age;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return MyFirstComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", String)
 ], MyFirstComponent.prototype, "data", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number),
+    __metadata("design:paramtypes", [Number])
+], MyFirstComponent.prototype, "userAge", null);
 MyFirstComponent = __decorate([
     core_1.Component({
         selector: "my-first-component",
-        template: "\n                <h1>Component with input data from another component</h1>\n                <div>data: {{data}}</div>\n"
+        template: "\n                <h1>Component with input data from another component</h1>\n                <div>data: {{data}}</div>\n                <p>Age from main component: {{userAge}}</p>\n"
     })
 ], MyFirstComponent);
 Object.defineProperty(exports, "__esModule", { value: true });

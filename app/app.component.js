@@ -11,6 +11,7 @@ var AppComponent = (function () {
         this.startText = 'Hello World';
         this.author = 'Artem';
         this.temp = 'test string';
+        this.age = 20;
     }
     AppComponent.prototype.showTempString = function () {
         alert(this.temp);
