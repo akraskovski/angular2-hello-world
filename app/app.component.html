@@ -1,0 +1,13 @@
+<h1>Односторонняя привязка данных:</h1>
+<p>double figure brackets: {{startText}}</p>
+<input type="text" [value]='temp' />
+<button (click)="showTempString()">CHECK</button>
+<hr/>
+<h1>Двустороння привязка данных:</h1>
+<p>Привет {{twoSideStr}}</p>
+<input type="text" [(ngModel)]='twoSideStr' /> <br><br>
+<input type="text" [(ngModel)]='twoSideStr' />
+<hr/>
+<my-first-component [data] = author></my-first-component>
+<hr/>
+<array-example-component></array-example-component>

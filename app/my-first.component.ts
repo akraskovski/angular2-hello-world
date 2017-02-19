@@ -2,12 +2,12 @@ import {Component, Input} from "@angular/core";
 
 @Component({
     selector: "my-first-component",
-    template: `<h3>Component 2</h3>
-                <br/>
-                <div>{{data}}</div>
+    template: `
+                <h1>Component with input data from another component</h1>
+                <div>data: {{data}}</div>
 `
 })
-export class MyFirstComponent {
+export default class MyFirstComponent {
     @Input()
-    data: string
+    data: string;
 }

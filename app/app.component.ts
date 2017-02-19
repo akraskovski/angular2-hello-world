@@ -2,12 +2,15 @@ import {Component} from "@angular/core";
 
 @Component({
     selector: 'my-app',
-    template: `
-                <h1>{{text}}</h1>
-                <my-first-component [data]=author></my-first-component>
-              `
+    templateUrl: 'app/app.component.html'
 })
-export class AppComponent {
-    text: string = 'Hello World';
+export default class AppComponent {
+    startText: string = 'Hello World';
     author: string = 'Artem';
+    temp: string = 'test string';
+    twoSideStr: string;
+
+    showTempString(): void {
+        alert(this.temp);
+    }
 }

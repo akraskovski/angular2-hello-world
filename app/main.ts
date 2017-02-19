@@ -2,4 +2,4 @@ import { platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppModule} from "./app.module";
 
 const platform = platformBrowserDynamic();
-platform.bootstrapModule(AppModule).catch(() => {console.log('Error while bootsraping')});
+platform.bootstrapModule(AppModule).catch(() => {console.log('Error while bootstrapping')});

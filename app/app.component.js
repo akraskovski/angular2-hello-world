@@ -8,16 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.text = 'Hello World';
+        this.startText = 'Hello World';
         this.author = 'Artem';
+        this.temp = 'test string';
     }
+    AppComponent.prototype.showTempString = function () {
+        alert(this.temp);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n                <h1>{{text}}</h1>\n                <my-first-component [data]=author></my-first-component>\n              "
+        templateUrl: 'app/app.component.html'
     })
 ], AppComponent);
-exports.AppComponent = AppComponent;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = AppComponent;
 //# sourceMappingURL=app.component.js.map
