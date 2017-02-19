@@ -11,6 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var my_first_component_1 = require("./my-first.component");
 var array_example_component_1 = require("./array-example.component");
+var directive_example_component_1 = require("./directive-example.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,7 +20,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.default, my_first_component_1.default, array_example_component_1.default],
+        declarations: [app_component_1.default, my_first_component_1.default, array_example_component_1.default, directive_example_component_1.default],
         bootstrap: [app_component_1.default]
     })
 ], AppModule);
