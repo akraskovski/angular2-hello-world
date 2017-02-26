@@ -15,4 +15,11 @@
 <hr/>
 <directive-example-component></directive-example-component>
 <hr/>
+<h1>Data from service</h1>
+<h3>Component 1 using service</h3>
 <test-component></test-component>
+<hr/>
+<h3>Component 2 using service</h3>
+<ul>
+    <li *ngFor="let name of arrayFromService">{{name}}</li>
+</ul>
